@@ -1,6 +1,5 @@
 #include <cmath>
 #include <random>
-#include <iostream>
 #include <algorithm>
 #include "implied_volatility.hpp"
 #include <pybind11/pybind11.h>

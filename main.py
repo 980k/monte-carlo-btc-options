@@ -81,12 +81,10 @@ if __name__=="__main__":
     m = mc.PyMonteCarlo()
     call_value = m.monte_carlo(strikePrice, time, spotPrice, rate, div, marketValue, N, M)
     stdError = m.stdErr
-    stdDev = m.stdDev
 
     ma = mc.PyMonteCarlo()
     call_value2 = ma.monte_carlo_antihetic(strikePrice, time, spotPrice, rate, div, marketValue, N, M)
     stdError2 = ma.stdErr
-    stdDev2 = ma.stdDev
 
     print("Call value is ${0} with SE +/- {1}".format(np.round(call_value,2),np.round(stdError,2)))
     print("Call value is ${0} with SE +/- {1}".format(np.round(call_value2,2),np.round(stdError2,2)))
